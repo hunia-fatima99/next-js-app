@@ -28,7 +28,6 @@ export async function getStaticProps() {
         .collection('news')
         .get();
     querySnapshot.forEach(function (doc) {
-        console.log(doc.data())
         news.push({
             id: doc.id,
             ...doc.data()
@@ -38,7 +37,6 @@ export async function getStaticProps() {
     return {
         props: {
             news: news || [],
-        },
-        revalidate: 60
+        }
     }
 }
