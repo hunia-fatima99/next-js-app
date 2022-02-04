@@ -1,6 +1,10 @@
 {
+  "/NewsPage/list": "pages/NewsPage/list.js",
   "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/home": "pages/home.js",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/NewsPage/list": "pages/NewsPage/list.js"
+  "/404": "pages/404.html"
 }
