@@ -27,7 +27,7 @@ export async function getStaticProps() {
         .firestore()
         .collection('news')
         .get();
-
+    debugger
     querySnapshot.forEach(function (doc) {
         news.push({
             id: doc.id,
@@ -38,7 +38,6 @@ export async function getStaticProps() {
     return {
         props: {
             news: news || [],
-        },
-        revalidate: 300
+        }
     }
 }
